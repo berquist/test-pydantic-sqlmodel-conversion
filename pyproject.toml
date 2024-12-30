@@ -1,0 +1,20 @@
+[project]
+name = "test-pydantic-sqlmodel-conversion"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Eric Berquist", email = "eric.berquist@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic>=2.10.4",
+    "sqlmodel>=0.0.22",
+]
+
+[project.scripts]
+test-pydantic-sqlmodel-conversion = "test_pydantic_sqlmodel_conversion:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
